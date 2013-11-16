@@ -1,8 +1,11 @@
 local crypto = require"sodium"
 
+print("crypto_scalarmult")
+print("=====================================================")
 print("scalarmult_primitive", crypto.scalarmult_primitive())
 print("scalarmult_bytes", crypto.scalarmult_bytes())
 print("scalarmult_scalarbytes", crypto.scalarmult_scalarbytes())
+print("-----------------------------------------------------")
 
 print("crypto_box")
 print("=====================================================")
