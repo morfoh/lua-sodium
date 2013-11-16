@@ -13,6 +13,7 @@ sys_include "sodium.h",
 
 subfiles {
 "src/crypto_scalarmult.nobj.lua",
+"src/crypto_box.nobj.lua",
 },
 }
 

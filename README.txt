@@ -121,3 +121,33 @@ the default used in libsodium!
 
 |============================================================================
 
+
+=== Public-key authenticated encryption: crypto_box
+
+[IMPORTANT]
+Currently only curve25519xsalsa20poly1305 is supported as it is the default
+used in libsodium!
+
+==== crypto_box_curve25519xsalsa20poly1305
+
+[options="header"]
+|============================================================================
+|C Function			|Status
+
+|crypto_box_primitive		|DONE
+|crypto_box_publickeybytes	|DONE
+|crypto_box_secretkeybytes	|DONE
+|crypto_box_beforenmbytes	|DONE
+|crypto_box_noncebytes		|DONE
+|crypto_box_zerobytes		|DONE
+|crypto_box_boxzerobytes	|DONE
+|crypto_box_macbytes		|DONE
+|crypto_box_keypair		|TODO
+|crypto_box_beforenm		|TODO
+|crypto_box_afternm		|TODO
+|crypto_box_open_afternm	|TODO
+|crypto_box			|TODO
+|crypto_box_open		|TODO
+
+|============================================================================
+
