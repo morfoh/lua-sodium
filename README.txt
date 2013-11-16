@@ -98,3 +98,26 @@ you have to to set the CMake variable `GENERATE_LUADOCS` to `FALSE`.
 cmake ../ -DUSE_PRE_GENERATED_BINDINGS=FALSE -DGENERATE_LUADOCS=FALSE
 -----------------------------------------------------------------------------
 
+Implementation status
+---------------------
+
+=== Scalar multiplication
+
+[IMPORTANT]
+Currently only http://cr.yp.to/ecdh.html[curve25519] is supported as it is
+the default used in libsodium!
+
+==== crypto_scalarmult_curve25519
+
+[options="header"]
+|============================================================================
+|Function			|Status
+
+|scalarmult_bytes		|DONE
+|scalarmult_scalarbytes		|DONE
+|scalarmult_primitive		|DONE
+|crypto_scalarmult_base		|TODO
+|crypto_scalarmult		|TODO
+
+|============================================================================
+
