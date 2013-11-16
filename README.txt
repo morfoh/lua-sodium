@@ -111,11 +111,11 @@ the default used in libsodium!
 
 [options="header"]
 |============================================================================
-|Function			|Status
+|C Function			|Status
 
-|scalarmult_bytes		|DONE
-|scalarmult_scalarbytes		|DONE
-|scalarmult_primitive		|DONE
+|crypto_scalarmult_bytes	|DONE
+|crypto_scalarmult_scalarbytes	|DONE
+|crypto_scalarmult_primitive	|DONE
 |crypto_scalarmult_base		|TODO
 |crypto_scalarmult		|TODO
 
