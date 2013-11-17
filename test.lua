@@ -17,4 +17,8 @@ print("box_noncebytes", crypto.box_noncebytes())
 print("box_zerobytes", crypto.box_zerobytes())
 print("box_boxzerobytes", crypto.box_boxzerobytes())
 print("box_macbytes", crypto.box_macbytes())
+
+local pk, sk = crypto.box_keypair()
+print("box_keypair", "public key", pk)
+print("box_keypair", "secret key", sk)
 print("-----------------------------------------------------")
