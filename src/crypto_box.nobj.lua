@@ -89,3 +89,30 @@ c_function "box_primitive" {
   ${primitive} = crypto_box_primitive();
 ]],
 }
+
+object "crypto_box_publickey" {
+	c_source [[
+typedef unsigned char crypto_box_publickey;
+]],
+}
+
+object "crypto_box_secretkey" {
+	c_source [[
+typedef unsigned char crypto_box_secretkey;
+]],
+}
+
+-- int crypto_box_keypair(unsigned char *pk, unsigned char *sk);
+c_function "box_keypair" {
+	var_out { "crypto_box_publickey *", "pk" },
+	var_out { "crypto_box_secretkey *", "sk" },
+	c_source[[
+  unsigned char tpk[crypto_box_publickeybytes()];
+  unsigned char tsk[crypto_box_secretkeybytes()];
+
+  crypto_box_keypair(tpk, tsk);
+
+  ${pk} = tpk;
+  ${sk} = tsk;
+]],
+}
