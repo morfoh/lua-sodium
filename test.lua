@@ -22,3 +22,8 @@ local pk, sk = crypto.box_keypair()
 print("box_keypair", "public key", pk)
 print("box_keypair", "secret key", sk)
 print("-----------------------------------------------------")
+
+print("randombytes")
+print("=====================================================")
+print("randombytes", crypto.randombytes(crypto.box_noncebytes()))
+print("-----------------------------------------------------")
