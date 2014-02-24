@@ -42,7 +42,7 @@ set(LUA_SODIUM_SRC
 )
 
 if(${USE_PRE_GENERATED_BINDINGS})
-	set(LUA_SODIUM_SRC src/pre_generated-sodium.nobj.c)
+	set(LUA_SODIUM_SRC src/sodium.nobj.pre_generated.c)
 else()
 	# Generate Lua bindings.
 	GenLuaNativeObjects(LUA_SODIUM_SRC)
